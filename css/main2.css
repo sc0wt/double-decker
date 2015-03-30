@@ -51,9 +51,6 @@ body {
 	overflow: hidden;
 }
 
-.tier1 .shrink {
-	font-size: 1em;
-}
 
 .tier1 .ident {
 	width: 30%;
@@ -85,19 +82,16 @@ body {
 
 
 .tier1 .search {
+	margin-top: 200px;
 	padding-top: 50px;
-	left:0%;
+	float: left;
 	font-size: .75em;
 }
 
 
 .tier1 .login {
 	float: right;
-	overflow: hidden;
-	width: 45%;
-	bottom: 10px;
 	background: black;
-	position: relative;
 	padding: 30px;
 	font-size: .75em;
 }
@@ -118,7 +112,6 @@ body {
 .tier1 input[type="text"]:focus,
 .tier1 input[type="text"].focus {
   border: none;
-  width:40%;
   height: auto;
   box-shadow: none;
   font-size: 1em;
@@ -265,7 +258,6 @@ a:hover {
 ul {
 	list-style-type: none;
 	height: auto;
-	margin: 30px 30px 30px -10px;
 }
 
 
