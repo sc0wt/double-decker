@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Decker Library at MICA</title>
+	<link rel="stylesheet" href="/bower_components/normalize.css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/main2.css">
+</head>
+<body>
+
+	<div class="tier1" id="top">
+		
+		<div class="ident">
+			decker<br><span class="verdana">library</span>
+		</div>
+		
+		<div class="hours-sign">
+			<span class="smalltype">OPEN TODAY</span>
+			
+			<br>08:30&#8212;21:00
+			
+			<div class="smalltype">
+				M&#8212;T : 08:30&#8212;21:00
+				<br>
+				F : 08:30&#8212;16:30
+				<br>
+				S,S : NOON&#8212;18:00
+				<br>
+				<a href="contact.html">CONTACT</a></li>
+			</div>
+			
+			
+			<div class="tier1 search">
+				<input type="text" name="search" placeholder="SEARCH">
+				</div>
+		
+			<ul class="login">
+				<input type="text" name="username" placeholder="USERNAME">
+				<br>
+				<input type="text" name="password" placeholder="PASSWORD">
+				<br>
+				<input type="submit" id="submit" value="LOG IN"><a href="Profile.html"></a>
+			</ul>
+					
+		</div>
+		
+
+	
+<!--
+	<div class="footer">	
+		
+		<ul class="footer">
+			<li><a href="libraryhours.html">HOURS</a></li>
+			<li><a href="exhibitions.html">ON VIEW</a></li>
+			<li><a href="librarycontact.html">CONTACT</a></li>
+		</ul>
+		
+		
+	</div>
+-->
+				
+		<!-- build:js scripts/site.js -->
+	<!-- bower:js -->
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<script src="bower_components/jqueryjs/jquery.js"></script>
+	<script src="bower_components/jquery-ui/jquery-ui.js"></script>
+	<script src="bower_components/waypoints/lib/jquery.waypoints.min.js"></script>
+	<!-- endbower -->
+	<!-- endbuild -->
+	<script>
+		var waypoint = new Waypoint({
+		  element: document.getElementById('top'),
+		  handler: function() {
+			 $('#top').toggleClass('shrink'); 
+		  },
+		  offset: -25
+		})
+	</script>
+</body>

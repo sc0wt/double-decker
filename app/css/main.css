@@ -1,0 +1,318 @@
+/* # Elements
+
+basic styling of html tags
+
+	<div class="title">Alpha Heading</div>
+	<div class="subtitle">Beta Heading</div>
+
+*/
+
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0;
+}
+
+
+
+/* ## Headers
+
+primary header styles used throughout the site
+
+	<h1>Heading 1</h1>
+	<h2>Heading 2</h2>
+	
+	<div class="alpha">Alpha Heading</div>
+	<div class="beta">Beta Heading</div>
+
+*/
+
+h1 {
+	font-size: 2.5em;
+	font-family: sans-serif;
+}
+
+h2 {
+	font-size: 1em;
+	font-family: sans-serif;
+}
+
+
+/* # Objects
+
+Modular Objects re-used throuhgout the site
+
+• blog post images / book images
+• back button
+• page header
+• login
+
+*/
+
+
+
+/* # Modules
+*/
+
+/* ## Book Item
+
+Base off of media object
+
+	<div></div>
+	
+*/
+
+.book-item {
+	background-color: pink;
+}
+
+.book-item .src {
+	margin-right: 0;
+}
+
+.book-item .body {
+	padding: 10px 20px;
+	background-color: red;
+}
+
+.book-item-small {
+	font-size: 12px;
+	color: white;
+}
+
+.book-item-small .src {
+	width: 100px;
+	height: auto;	
+}
+
+
+/* # Homepage
+
+*/
+
+.home-column {
+	width: 50vw;
+	height: 100%;
+	float: left;
+	overflow: hidden;
+	background: white;
+	font-family: sans-serif;
+}
+
+.home-column .shiftright {
+	right: 0;
+	border-left: rgb(35,200,150) solid 2px;
+}
+
+.decker-logo {
+	font-family: Helvetica, sans-serif;
+	text-transform: uppercase;
+	padding-left: 30px;
+	/* scale shift: */
+}
+
+.hours-sign {
+	font-family: sans-serif;
+	font-size: 2em;
+	background: white;
+	padding-left: 30px;
+}
+
+
+.hours-sign .closed {
+	background: black;
+}
+
+.home-column a:link {
+	text-decoration: none;
+	color: black;
+}
+
+.home-column a:visited {
+	text-decoration: none;
+	color: black;
+}
+
+.home-column a:hover {
+	color: rgb(35,200,150);
+	border-bottom: rgb(35,200,150) solid 2px;
+	padding-bottom: 10px;	
+}
+
+.home-column ul {
+	list-style-type: none;
+	height: auto;
+	margin: 30px 30px 30px -10px;
+}
+
+.home-column li {
+	float:left;
+	margin-right: 50px;
+	border-bottom: black solid 2px;
+	padding-bottom: 10px;
+
+}
+
+.home-column li:last-child {
+	margin-right: 0px;
+}
+
+.blog-column form {
+	margin-top: 80px;
+	padding-left: 30px;
+}
+
+.home-column .blog-entry {
+	margin: 80px 0 0 30px;
+	height: inherit;
+}
+
+.home-column .blog-entry .book-list {
+	margin: 80px 0 0 30px;
+	width: 90%;
+}
+
+.blog-entry .booky {
+	width: 33%;
+	float: left;
+	margin-bottom: 10px;
+}
+
+.blog-entry img {
+	border: rgb(35,200,150) solid 1px;
+	float: left;
+	margin: 10px;
+	padding: 5px;
+}
+
+.home-column .blog-entry .content {
+	margin: 30px 0 0 30px;
+	width: 90%;
+	float: left;
+}
+
+.blog-entry .caption {
+	font-size: .5em;
+	font-family: sans-serif;
+	text-transform: uppercase;
+	color: rgb(255,175,0);
+	letter-spacing: 120%;
+	padding-left: 10px;
+}
+
+.blog-entry p {
+	font-family: sans-serif;
+	font-size: 1em;
+	color: black;
+	line-height: 120%;
+	text-transform: none;
+}
+
+
+
+
+
+.home-column hr {
+	border: 0;
+    height: 4px;
+    width: 90%;
+    margin-top: 60px;
+    border-radius: 10px;
+    background-image: -webkit-linear-gradient(left, rgb(35,200,150), rgb(35,200,150), rgb(255,175,0));
+    background-image:    -moz-linear-gradient(left, rgb(35,200,150), rgb(35,200,150), rgb(255,175,0));
+    background-image:     -ms-linear-gradient(left, rgb(35,200,150), rgb(35,200,150), rgb(255,175,0));
+    background-image:      -o-linear-gradient(left, rgb(35,200,150), rgb(35,200,150), rgb(255,175,0));
+}
+
+
+/* info column
+
+*/
+
+.info-column {
+	width: 50vw;
+	height: auto;
+	overflow: auto;
+	background: white;
+}
+
+.info-column ul {
+	font-family: sans-serif;
+	font-size: 2em;
+	margin: 30px 0 0 30px;
+}
+
+.info-column .hours li  {
+	text-indent: 30px;
+}
+
+.info-column .contact li {
+	text-indent: 30px;
+	color:rgb(35,200,150);
+}
+
+.info-column .contact a {
+	color: rgb(255,175,0);
+}
+
+/* search column
+
+*/
+
+.search-column {
+	width: 50vw;
+	height: auto;
+	overflow: auto;
+	right: 0px;
+	float:right;
+	background: -webkit-linear-gradient(0deg, rgb(35,200,150), rgb(255,175,0));
+	background: -o-linear-gradient(0deg, rgb(35,200,150), rgb(255,175,0));
+	background: -moz-linear-gradient(0deg, rgb(35,200,150), rgb(255,175,0));
+	background: linear-gradient(0deg, rgb(35,200,150), rgb(255,175,0));
+	margin-bottom: -99999px;
+	padding-bottom: 99999px;
+}
+
+.search-column .top {
+	font-family: sans-serif;
+	font-size: 2em;
+	color: black;
+	padding-left: 30px;
+}
+
+.search-column .search input#search {
+	width: 300px;
+	height: 50px;
+	background: black;
+	border: none;
+	font-size: .5em;
+	float: left;
+	color: white;
+	padding-left: 45px;
+	border-radius: 10px;
+	
+}
+
+.search-column .browse {
+	
+}
+
+.search-column .browse ul {
+	font-family: sans-serif;
+	font-size: 1em;
+	color: white;
+	list-style-type: none;
+	margin-right: 20px;
+}
+
+.search-column .browse li {
+	padding: 10px 20px;
+	clear:right;
+}
